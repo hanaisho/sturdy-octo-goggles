@@ -14,6 +14,12 @@
 		CA39D7351E9666B400841291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39D7331E9666B400841291 /* LaunchScreen.storyboard */; };
 		CA39D7401E9666B400841291 /* AlarmAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D73F1E9666B400841291 /* AlarmAppTests.swift */; };
 		CA39D74B1E9666B400841291 /* AlarmAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D74A1E9666B400841291 /* AlarmAppUITests.swift */; };
+		CA39D75D1E9E4A9B00841291 /* hanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D75B1E9E4A9B00841291 /* hanaViewController.swift */; };
+		CA39D75E1E9E4A9B00841291 /* hanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D75B1E9E4A9B00841291 /* hanaViewController.swift */; };
+		CA39D75F1E9E4A9B00841291 /* hanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D75B1E9E4A9B00841291 /* hanaViewController.swift */; };
+		CA39D7601E9E4A9B00841291 /* hanaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaViewController.xib */; };
+		CA39D7611E9E4A9B00841291 /* hanaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaViewController.xib */; };
+		CA39D7621E9E4A9B00841291 /* hanaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,8 @@
 		CA39D7461E9666B400841291 /* AlarmAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA39D74A1E9666B400841291 /* AlarmAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAppUITests.swift; sourceTree = "<group>"; };
 		CA39D74C1E9666B400841291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA39D75B1E9E4A9B00841291 /* hanaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hanaViewController.swift; sourceTree = "<group>"; };
+		CA39D75C1E9E4A9B00841291 /* hanaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hanaViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,9 @@
 		CA39D71E1E9666B400841291 = {
 			isa = PBXGroup;
 			children = (
+				CA39D75A1E9E4A3400841291 /* yoshi */,
+				CA39D7591E9E4A2700841291 /* take */,
+				CA39D7581E9E4A1500841291 /* hana */,
 				CA39D7291E9666B400841291 /* AlarmApp */,
 				CA39D73E1E9666B400841291 /* AlarmAppTests */,
 				CA39D7491E9666B400841291 /* AlarmAppUITests */,
@@ -123,6 +134,29 @@
 				CA39D74C1E9666B400841291 /* Info.plist */,
 			);
 			path = AlarmAppUITests;
+			sourceTree = "<group>";
+		};
+		CA39D7581E9E4A1500841291 /* hana */ = {
+			isa = PBXGroup;
+			children = (
+				CA39D75B1E9E4A9B00841291 /* hanaViewController.swift */,
+				CA39D75C1E9E4A9B00841291 /* hanaViewController.xib */,
+			);
+			name = hana;
+			sourceTree = "<group>";
+		};
+		CA39D7591E9E4A2700841291 /* take */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = take;
+			sourceTree = "<group>";
+		};
+		CA39D75A1E9E4A3400841291 /* yoshi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = yoshi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +268,7 @@
 			files = (
 				CA39D7351E9666B400841291 /* LaunchScreen.storyboard in Resources */,
 				CA39D7321E9666B400841291 /* Assets.xcassets in Resources */,
+				CA39D7601E9E4A9B00841291 /* hanaViewController.xib in Resources */,
 				CA39D7301E9666B400841291 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA39D7611E9E4A9B00841291 /* hanaViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA39D7621E9E4A9B00841291 /* hanaViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA39D72D1E9666B400841291 /* ViewController.swift in Sources */,
+				CA39D75D1E9E4A9B00841291 /* hanaViewController.swift in Sources */,
 				CA39D72B1E9666B400841291 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA39D75E1E9E4A9B00841291 /* hanaViewController.swift in Sources */,
 				CA39D7401E9666B400841291 /* AlarmAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA39D75F1E9E4A9B00841291 /* hanaViewController.swift in Sources */,
 				CA39D74B1E9666B400841291 /* AlarmAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +547,7 @@
 				CA39D7511E9666B400841291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA39D7521E9666B400841291 /* Build configuration list for PBXNativeTarget "AlarmAppTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +556,7 @@
 				CA39D7541E9666B400841291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA39D7551E9666B400841291 /* Build configuration list for PBXNativeTarget "AlarmAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +565,7 @@
 				CA39D7571E9666B400841291 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
