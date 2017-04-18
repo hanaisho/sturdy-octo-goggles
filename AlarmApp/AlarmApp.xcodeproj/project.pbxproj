@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA1BE6D61EA65D8700C2CA31 /* HanaiNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1BE6D41EA65D8700C2CA31 /* HanaiNavigationViewController.swift */; };
+		CA1BE6D71EA65D8700C2CA31 /* HanaiNavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1BE6D51EA65D8700C2CA31 /* HanaiNavigationViewController.xib */; };
+		CA1BE6D91EA65DF300C2CA31 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1BE6D81EA65DF300C2CA31 /* MainViewController.xib */; };
 		CA39D72B1E9666B400841291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D72A1E9666B400841291 /* AppDelegate.swift */; };
 		CA39D7301E9666B400841291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39D72E1E9666B400841291 /* Main.storyboard */; };
 		CA39D7321E9666B400841291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA39D7311E9666B400841291 /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA1BE6D41EA65D8700C2CA31 /* HanaiNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HanaiNavigationViewController.swift; sourceTree = "<group>"; };
+		CA1BE6D51EA65D8700C2CA31 /* HanaiNavigationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HanaiNavigationViewController.xib; sourceTree = "<group>"; };
+		CA1BE6D81EA65DF300C2CA31 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CA39D7271E9666B400841291 /* AlarmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA39D72A1E9666B400841291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA39D72F1E9666B400841291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -156,6 +162,8 @@
 				CAE8971F1EA642F100F81FDB /* AfururuCalender */,
 				CA39D75B1E9E4A9B00841291 /* hanaMainViewController.swift */,
 				CA39D75C1E9E4A9B00841291 /* hanaMainViewController.xib */,
+				CA1BE6D41EA65D8700C2CA31 /* HanaiNavigationViewController.swift */,
+				CA1BE6D51EA65D8700C2CA31 /* HanaiNavigationViewController.xib */,
 			);
 			name = hana;
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				CAF80CE41E9E69BE00D8BA6A /* MainViewController.swift */,
+				CA1BE6D81EA65DF300C2CA31 /* MainViewController.xib */,
 			);
 			name = main;
 			sourceTree = "<group>";
@@ -320,8 +329,10 @@
 				CAE897251EA6435A00F81FDB /* AfururuCalenderViewController.xib in Resources */,
 				CAE897291EA643AB00F81FDB /* AfururuEnglishViewController.xib in Resources */,
 				CA39D7321E9666B400841291 /* Assets.xcassets in Resources */,
+				CA1BE6D91EA65DF300C2CA31 /* MainViewController.xib in Resources */,
 				CAE8972D1EA643C100F81FDB /* AfururuMapViewController.xib in Resources */,
 				CA39D7601E9E4A9B00841291 /* hanaMainViewController.xib in Resources */,
+				CA1BE6D71EA65D8700C2CA31 /* HanaiNavigationViewController.xib in Resources */,
 				CA39D7301E9666B400841291 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +362,7 @@
 			files = (
 				CAE897281EA643AB00F81FDB /* AfururuEnglishViewController.swift in Sources */,
 				CA39D75D1E9E4A9B00841291 /* hanaMainViewController.swift in Sources */,
+				CA1BE6D61EA65D8700C2CA31 /* HanaiNavigationViewController.swift in Sources */,
 				CAE897241EA6435A00F81FDB /* AfururuCalenderViewController.swift in Sources */,
 				CA39D72B1E9666B400841291 /* AppDelegate.swift in Sources */,
 				CAE8972C1EA643C100F81FDB /* AfururuMapViewController.swift in Sources */,

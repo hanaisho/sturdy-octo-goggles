@@ -11,9 +11,19 @@ import UIKit
 class MainViewController: UITabBarController{
     
     
+    override func loadView() {
+        print("ViewController/loadView/Viewの読み込み時")
+//        if let view = UINib(nibName: "MainViewController", bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView {
+//            self.view = view
+//        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "MainViewController"
+        if let view1 = UINib(nibName: "MainViewController", bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView {
+                        self.view.addSubview(view1)
+                    }
         print("ViewController/viewDidLoad/インスタンス化された直後（初回に一度のみ）")
         
     }
