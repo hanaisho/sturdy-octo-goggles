@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-698" y="-1888"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="OwO-O0-Wlf">
             <objects>
-                <viewController id="TGp-Vm-wrL" sceneMemberID="viewController">
+                <viewController id="TGp-Vm-wrL" customClass="MainViewController" customModule="AlarmApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c3g-6D-lly"/>
                         <viewControllerLayoutGuide type="bottom" id="GTP-D3-C3l"/>
@@ -45,21 +45,21 @@
                                         <rect key="frame" x="0.0" y="0.0" width="114.5" height="30"/>
                                         <state key="normal" title="はな"/>
                                         <connections>
-                                            <segue destination="xPP-da-odY" kind="show" id="Xof-Lf-tww"/>
+                                            <segue destination="xPP-da-odY" kind="show" identifier="goToHanaiMain" id="Xof-Lf-tww"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izL-gI-Qxk">
                                         <rect key="frame" x="114.5" y="0.0" width="114" height="30"/>
                                         <state key="normal" title="ちゃき"/>
                                         <connections>
-                                            <segue destination="2UY-5b-RXV" kind="show" id="i6u-jM-4V0"/>
+                                            <segue destination="2UY-5b-RXV" kind="show" identifier="goToTyakiMain" id="i6u-jM-4V0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOa-1P-4vN">
                                         <rect key="frame" x="228.5" y="0.0" width="114.5" height="30"/>
                                         <state key="normal" title="たけ"/>
                                         <connections>
-                                            <segue destination="k4b-7N-zxn" kind="show" id="6KC-Sq-kir"/>
+                                            <segue destination="k4b-7N-zxn" kind="show" identifier="goToTakeMain" id="6KC-Sq-kir"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -102,6 +102,44 @@
             </objects>
             <point key="canvasLocation" x="6" y="-136"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="wSG-2o-Wra">
+            <objects>
+                <viewController id="kAC-nj-d6E" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7kO-c5-up7"/>
+                        <viewControllerLayoutGuide type="bottom" id="jL6-D3-yp7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O7Q-IG-4HK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="tog-zS-F89"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2HO-qr-0Vg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2034" y="-139"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="lVm-Cv-wxl">
+            <objects>
+                <viewController id="9Go-90-vNb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LTT-Js-HiY"/>
+                        <viewControllerLayoutGuide type="bottom" id="geR-dk-YzF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OWe-Pk-I1l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="XAu-sm-E9d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HH2-Id-FYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1357" y="-137"/>
+        </scene>
         <!--Item 1-->
         <scene sceneID="k4Z-Ur-23c">
             <objects>
@@ -124,6 +162,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="9yd-Pl-V8c">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rte-pT-V0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="xPP-da-odY" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="sDJ-s3-qkh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -133,9 +172,10 @@
                     <connections>
                         <segue destination="INw-Z1-aSU" kind="relationship" relationship="viewControllers" id="ZcQ-kC-gU7"/>
                         <segue destination="tDp-CP-AdN" kind="relationship" relationship="viewControllers" id="EuS-Cu-ejw"/>
+                        <segue destination="9Go-90-vNb" kind="relationship" relationship="viewControllers" id="inG-9t-nBn"/>
+                        <segue destination="kAC-nj-d6E" kind="relationship" relationship="viewControllers" id="HAn-Oh-Dpu"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rte-pT-V0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-327" y="-917"/>
         </scene>

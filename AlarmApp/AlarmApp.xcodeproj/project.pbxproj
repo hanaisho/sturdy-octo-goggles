@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		CA39D72B1E9666B400841291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D72A1E9666B400841291 /* AppDelegate.swift */; };
-		CA39D72D1E9666B400841291 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D72C1E9666B400841291 /* ViewController.swift */; };
 		CA39D7301E9666B400841291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39D72E1E9666B400841291 /* Main.storyboard */; };
 		CA39D7321E9666B400841291 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA39D7311E9666B400841291 /* Assets.xcassets */; };
 		CA39D7351E9666B400841291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39D7331E9666B400841291 /* LaunchScreen.storyboard */; };
 		CA39D7401E9666B400841291 /* AlarmAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D73F1E9666B400841291 /* AlarmAppTests.swift */; };
 		CA39D74B1E9666B400841291 /* AlarmAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D74A1E9666B400841291 /* AlarmAppUITests.swift */; };
-		CA39D75D1E9E4A9B00841291 /* hanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D75B1E9E4A9B00841291 /* hanaViewController.swift */; };
-		CA39D75E1E9E4A9B00841291 /* hanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D75B1E9E4A9B00841291 /* hanaViewController.swift */; };
-		CA39D75F1E9E4A9B00841291 /* hanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D75B1E9E4A9B00841291 /* hanaViewController.swift */; };
-		CA39D7601E9E4A9B00841291 /* hanaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaViewController.xib */; };
-		CA39D7611E9E4A9B00841291 /* hanaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaViewController.xib */; };
-		CA39D7621E9E4A9B00841291 /* hanaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaViewController.xib */; };
+		CA39D75D1E9E4A9B00841291 /* hanaMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D75B1E9E4A9B00841291 /* hanaMainViewController.swift */; };
+		CA39D75E1E9E4A9B00841291 /* hanaMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D75B1E9E4A9B00841291 /* hanaMainViewController.swift */; };
+		CA39D75F1E9E4A9B00841291 /* hanaMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D75B1E9E4A9B00841291 /* hanaMainViewController.swift */; };
+		CA39D7601E9E4A9B00841291 /* hanaMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaMainViewController.xib */; };
+		CA39D7611E9E4A9B00841291 /* hanaMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaMainViewController.xib */; };
+		CA39D7621E9E4A9B00841291 /* hanaMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaMainViewController.xib */; };
+		CAF80CE51E9E69BE00D8BA6A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF80CE41E9E69BE00D8BA6A /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 /* Begin PBXFileReference section */
 		CA39D7271E9666B400841291 /* AlarmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA39D72A1E9666B400841291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA39D72C1E9666B400841291 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA39D72F1E9666B400841291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA39D7311E9666B400841291 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA39D7341E9666B400841291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,8 +52,9 @@
 		CA39D7461E9666B400841291 /* AlarmAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA39D74A1E9666B400841291 /* AlarmAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAppUITests.swift; sourceTree = "<group>"; };
 		CA39D74C1E9666B400841291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA39D75B1E9E4A9B00841291 /* hanaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hanaViewController.swift; sourceTree = "<group>"; };
-		CA39D75C1E9E4A9B00841291 /* hanaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hanaViewController.xib; sourceTree = "<group>"; };
+		CA39D75B1E9E4A9B00841291 /* hanaMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hanaMainViewController.swift; sourceTree = "<group>"; };
+		CA39D75C1E9E4A9B00841291 /* hanaMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hanaMainViewController.xib; sourceTree = "<group>"; };
+		CAF80CE41E9E69BE00D8BA6A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +85,7 @@
 		CA39D71E1E9666B400841291 = {
 			isa = PBXGroup;
 			children = (
+				CAF80CE31E9E69A300D8BA6A /* main */,
 				CA39D75A1E9E4A3400841291 /* yoshi */,
 				CA39D7591E9E4A2700841291 /* take */,
 				CA39D7581E9E4A1500841291 /* hana */,
@@ -109,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				CA39D72A1E9666B400841291 /* AppDelegate.swift */,
-				CA39D72C1E9666B400841291 /* ViewController.swift */,
 				CA39D72E1E9666B400841291 /* Main.storyboard */,
 				CA39D7311E9666B400841291 /* Assets.xcassets */,
 				CA39D7331E9666B400841291 /* LaunchScreen.storyboard */,
@@ -139,8 +139,8 @@
 		CA39D7581E9E4A1500841291 /* hana */ = {
 			isa = PBXGroup;
 			children = (
-				CA39D75B1E9E4A9B00841291 /* hanaViewController.swift */,
-				CA39D75C1E9E4A9B00841291 /* hanaViewController.xib */,
+				CA39D75B1E9E4A9B00841291 /* hanaMainViewController.swift */,
+				CA39D75C1E9E4A9B00841291 /* hanaMainViewController.xib */,
 			);
 			name = hana;
 			sourceTree = "<group>";
@@ -157,6 +157,14 @@
 			children = (
 			);
 			name = yoshi;
+			sourceTree = "<group>";
+		};
+		CAF80CE31E9E69A300D8BA6A /* main */ = {
+			isa = PBXGroup;
+			children = (
+				CAF80CE41E9E69BE00D8BA6A /* MainViewController.swift */,
+			);
+			name = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +276,7 @@
 			files = (
 				CA39D7351E9666B400841291 /* LaunchScreen.storyboard in Resources */,
 				CA39D7321E9666B400841291 /* Assets.xcassets in Resources */,
-				CA39D7601E9E4A9B00841291 /* hanaViewController.xib in Resources */,
+				CA39D7601E9E4A9B00841291 /* hanaMainViewController.xib in Resources */,
 				CA39D7301E9666B400841291 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA39D7611E9E4A9B00841291 /* hanaViewController.xib in Resources */,
+				CA39D7611E9E4A9B00841291 /* hanaMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA39D7621E9E4A9B00841291 /* hanaViewController.xib in Resources */,
+				CA39D7621E9E4A9B00841291 /* hanaMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,9 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA39D72D1E9666B400841291 /* ViewController.swift in Sources */,
-				CA39D75D1E9E4A9B00841291 /* hanaViewController.swift in Sources */,
+				CA39D75D1E9E4A9B00841291 /* hanaMainViewController.swift in Sources */,
 				CA39D72B1E9666B400841291 /* AppDelegate.swift in Sources */,
+				CAF80CE51E9E69BE00D8BA6A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA39D75E1E9E4A9B00841291 /* hanaViewController.swift in Sources */,
+				CA39D75E1E9E4A9B00841291 /* hanaMainViewController.swift in Sources */,
 				CA39D7401E9666B400841291 /* AlarmAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA39D75F1E9E4A9B00841291 /* hanaViewController.swift in Sources */,
+				CA39D75F1E9E4A9B00841291 /* hanaMainViewController.swift in Sources */,
 				CA39D74B1E9666B400841291 /* AlarmAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
