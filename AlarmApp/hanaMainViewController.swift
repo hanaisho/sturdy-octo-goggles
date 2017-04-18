@@ -8,16 +8,17 @@
 
 import UIKit
 
-class hanaMainViewController: UIViewController,UITabBarDelegate{
+class hanaMainViewController: UIViewController,UITabBarControllerDelegate{
 
-//    override func loadView() {
-//        if let view = UINib(nibName: "hanaMainViewController", bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView {
-//            self.view = view
-//        }
-//    }
+    override func loadView() {
+        if let view = UINib(nibName: "hanaMainViewController", bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView {
+            self.view = view
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "hanaMainViewController"
     }
 
     

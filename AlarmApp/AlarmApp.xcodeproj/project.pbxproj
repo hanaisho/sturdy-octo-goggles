@@ -19,6 +19,12 @@
 		CA39D7601E9E4A9B00841291 /* hanaMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaMainViewController.xib */; };
 		CA39D7611E9E4A9B00841291 /* hanaMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaMainViewController.xib */; };
 		CA39D7621E9E4A9B00841291 /* hanaMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA39D75C1E9E4A9B00841291 /* hanaMainViewController.xib */; };
+		CAE897241EA6435A00F81FDB /* AfururuCalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE897221EA6435900F81FDB /* AfururuCalenderViewController.swift */; };
+		CAE897251EA6435A00F81FDB /* AfururuCalenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE897231EA6435900F81FDB /* AfururuCalenderViewController.xib */; };
+		CAE897281EA643AB00F81FDB /* AfururuEnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE897261EA643AB00F81FDB /* AfururuEnglishViewController.swift */; };
+		CAE897291EA643AB00F81FDB /* AfururuEnglishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE897271EA643AB00F81FDB /* AfururuEnglishViewController.xib */; };
+		CAE8972C1EA643C100F81FDB /* AfururuMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE8972A1EA643C100F81FDB /* AfururuMapViewController.swift */; };
+		CAE8972D1EA643C100F81FDB /* AfururuMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE8972B1EA643C100F81FDB /* AfururuMapViewController.xib */; };
 		CAF80CE51E9E69BE00D8BA6A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF80CE41E9E69BE00D8BA6A /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +60,12 @@
 		CA39D74C1E9666B400841291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA39D75B1E9E4A9B00841291 /* hanaMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hanaMainViewController.swift; sourceTree = "<group>"; };
 		CA39D75C1E9E4A9B00841291 /* hanaMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = hanaMainViewController.xib; sourceTree = "<group>"; };
+		CAE897221EA6435900F81FDB /* AfururuCalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfururuCalenderViewController.swift; sourceTree = "<group>"; };
+		CAE897231EA6435900F81FDB /* AfururuCalenderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AfururuCalenderViewController.xib; sourceTree = "<group>"; };
+		CAE897261EA643AB00F81FDB /* AfururuEnglishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfururuEnglishViewController.swift; sourceTree = "<group>"; };
+		CAE897271EA643AB00F81FDB /* AfururuEnglishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AfururuEnglishViewController.xib; sourceTree = "<group>"; };
+		CAE8972A1EA643C100F81FDB /* AfururuMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfururuMapViewController.swift; sourceTree = "<group>"; };
+		CAE8972B1EA643C100F81FDB /* AfururuMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AfururuMapViewController.xib; sourceTree = "<group>"; };
 		CAF80CE41E9E69BE00D8BA6A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +151,9 @@
 		CA39D7581E9E4A1500841291 /* hana */ = {
 			isa = PBXGroup;
 			children = (
+				CAE897211EA6432D00F81FDB /* AfururuMap */,
+				CAE897201EA6431600F81FDB /* AfururuEnglish */,
+				CAE8971F1EA642F100F81FDB /* AfururuCalender */,
 				CA39D75B1E9E4A9B00841291 /* hanaMainViewController.swift */,
 				CA39D75C1E9E4A9B00841291 /* hanaMainViewController.xib */,
 			);
@@ -157,6 +172,33 @@
 			children = (
 			);
 			name = yoshi;
+			sourceTree = "<group>";
+		};
+		CAE8971F1EA642F100F81FDB /* AfururuCalender */ = {
+			isa = PBXGroup;
+			children = (
+				CAE897221EA6435900F81FDB /* AfururuCalenderViewController.swift */,
+				CAE897231EA6435900F81FDB /* AfururuCalenderViewController.xib */,
+			);
+			name = AfururuCalender;
+			sourceTree = "<group>";
+		};
+		CAE897201EA6431600F81FDB /* AfururuEnglish */ = {
+			isa = PBXGroup;
+			children = (
+				CAE897261EA643AB00F81FDB /* AfururuEnglishViewController.swift */,
+				CAE897271EA643AB00F81FDB /* AfururuEnglishViewController.xib */,
+			);
+			name = AfururuEnglish;
+			sourceTree = "<group>";
+		};
+		CAE897211EA6432D00F81FDB /* AfururuMap */ = {
+			isa = PBXGroup;
+			children = (
+				CAE8972A1EA643C100F81FDB /* AfururuMapViewController.swift */,
+				CAE8972B1EA643C100F81FDB /* AfururuMapViewController.xib */,
+			);
+			name = AfururuMap;
 			sourceTree = "<group>";
 		};
 		CAF80CE31E9E69A300D8BA6A /* main */ = {
@@ -275,7 +317,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA39D7351E9666B400841291 /* LaunchScreen.storyboard in Resources */,
+				CAE897251EA6435A00F81FDB /* AfururuCalenderViewController.xib in Resources */,
+				CAE897291EA643AB00F81FDB /* AfururuEnglishViewController.xib in Resources */,
 				CA39D7321E9666B400841291 /* Assets.xcassets in Resources */,
+				CAE8972D1EA643C100F81FDB /* AfururuMapViewController.xib in Resources */,
 				CA39D7601E9E4A9B00841291 /* hanaMainViewController.xib in Resources */,
 				CA39D7301E9666B400841291 /* Main.storyboard in Resources */,
 			);
@@ -304,8 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE897281EA643AB00F81FDB /* AfururuEnglishViewController.swift in Sources */,
 				CA39D75D1E9E4A9B00841291 /* hanaMainViewController.swift in Sources */,
+				CAE897241EA6435A00F81FDB /* AfururuCalenderViewController.swift in Sources */,
 				CA39D72B1E9666B400841291 /* AppDelegate.swift in Sources */,
+				CAE8972C1EA643C100F81FDB /* AfururuMapViewController.swift in Sources */,
 				CAF80CE51E9E69BE00D8BA6A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

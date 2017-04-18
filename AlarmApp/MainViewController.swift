@@ -8,11 +8,12 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UITabBarController{
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "MainViewController"
         print("ViewController/viewDidLoad/インスタンス化された直後（初回に一度のみ）")
         
     }
@@ -41,21 +42,4 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         print("ViewController/didReceiveMemoryWarning/メモリが足りないので開放される")
     }
-    
-
-    
-//    @IBAction func tapHanaButton(_ sender: Any) {
-//        performSegue(withIdentifier: "goToHanaiMain", sender: self)
-//    }
-//    
-//    @IBAction func tapTyakiButton(_ sender: Any) {
-//        performSegue(withIdentifier: "goToTyakiMain", sender: self)
-//    }
-//    
-//    @IBAction func tapTakeButton(_ sender: Any) {
-//        performSegue(withIdentifier: "goToTakeMain", sender: self)
-//        
-//    }
-    
-    
 }
