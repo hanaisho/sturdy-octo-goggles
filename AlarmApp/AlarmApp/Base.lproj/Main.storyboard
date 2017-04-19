@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="-7090" y="-5075"/>
         </scene>
-        <!--View Controller-->
+        <!--Yoshi calender View Controller-->
         <scene sceneID="rXU-vl-JPK">
             <objects>
-                <viewController id="Mfi-ur-UJe" sceneMemberID="viewController">
+                <viewController id="Mfi-ur-UJe" customClass="yoshi_calenderViewController" customModule="AlarmApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ik9-78-2vB"/>
                         <viewControllerLayoutGuide type="bottom" id="Q6X-Ud-3u5"/>
@@ -65,10 +65,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="VcJ-Er-e8U"/>
+                    <connections>
+                        <segue destination="J9d-T5-64P" kind="show" identifier="go_sample" id="mDk-jV-90X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGo-W5-Rrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6527" y="-3537"/>
+        </scene>
+        <!--Yoshi sample View Controller-->
+        <scene sceneID="esn-Kc-PuI">
+            <objects>
+                <viewController id="J9d-T5-64P" customClass="yoshi_sampleViewController" customModule="AlarmApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aos-US-VWc"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Gf-e6-Boc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kqh-X3-0AO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wpi-9x-Bmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5289" y="-3543"/>
         </scene>
         <!--Afururu English View Controller-->
         <scene sceneID="2HL-aq-v64">
