@@ -3,7 +3,7 @@
 //  AlarmApp
 //
 //  Created by 花井翔 on 2017/04/06.
-//  Copyright © 2017年 花井翔. All rights reserved.
+//  Copyright © 2017年 花井翔.岩崎吉伸. All rights reserved.
 //
 
 import UIKit
