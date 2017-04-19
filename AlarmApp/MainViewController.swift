@@ -13,9 +13,9 @@ class MainViewController: UITabBarController{
     
     override func loadView() {
         print("ViewController/loadView/Viewの読み込み時")
-//        if let view = UINib(nibName: "MainViewController", bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView {
-//            self.view = view
-//        }
+        if let view = UINib(nibName: "MainViewController", bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView {
+            self.view = view
+        }
     }
     
     override func viewDidLoad() {
@@ -52,4 +52,6 @@ class MainViewController: UITabBarController{
         super.didReceiveMemoryWarning()
         print("ViewController/didReceiveMemoryWarning/メモリが足りないので開放される")
     }
+    
+
 }

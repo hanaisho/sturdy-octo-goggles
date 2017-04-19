@@ -10,6 +10,12 @@ import UIKit
 
 class AfururuMapViewController: UIViewController {
 
+    
+    override func loadView() {
+        if let view = UINib(nibName: "AfururuMapViewController", bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView {
+            self.view = view
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
