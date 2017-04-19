@@ -21,9 +21,30 @@ class hanaMainViewController: UIViewController,UINavigationControllerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("ViewController/viewDidLoad/インスタンス化された直後（初回に一度のみ）")
         self.navigationItem.title = "hanaMainViewController"
         setPalam()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("ViewController/viewWillAppear/画面が表示される直前")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("ViewController/viewDidAppear/画面が表示された直後")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("ViewController/viewWillDisappear/別の画面に遷移する直前")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("ViewController/viewDidDisappear/別の画面に遷移した直後")
+    }
+    
     func setPalam(){
         calenderButton.addTarget(self, action: #selector(self.tapButton(sender:)), for: .touchUpInside)
         calenderButton.tag = 1
