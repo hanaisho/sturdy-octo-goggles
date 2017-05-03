@@ -66,30 +66,46 @@
                     </view>
                     <navigationItem key="navigationItem" id="VcJ-Er-e8U"/>
                     <connections>
-                        <segue destination="J9d-T5-64P" kind="show" identifier="go_sample" id="mDk-jV-90X"/>
+                        <segue destination="avW-Uu-taG" kind="show" identifier="goCalendar" id="kY2-60-Q62"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGo-W5-Rrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6527" y="-3537"/>
         </scene>
-        <!--Yoshi sample View Controller-->
-        <scene sceneID="esn-Kc-PuI">
+        <!--Calendar Collection View Controller-->
+        <scene sceneID="Cfv-Kt-BFP">
             <objects>
-                <viewController id="J9d-T5-64P" customClass="yoshi_sampleViewController" customModule="AlarmApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aos-US-VWc"/>
-                        <viewControllerLayoutGuide type="bottom" id="2Gf-e6-Boc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kqh-X3-0AO">
+                <collectionViewController id="avW-Uu-taG" customClass="CalendarCollectionViewController" customModule="AlarmApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="63h-Ha-ZGV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wpi-9x-Bmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ihw-sH-wOa">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VSE-db-gPf" customClass="CalendarCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="avW-Uu-taG" id="4yK-Uf-WgD"/>
+                            <outlet property="delegate" destination="avW-Uu-taG" id="Dqb-3j-EYi"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GyB-sx-ZBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5289" y="-3543"/>
+            <point key="canvasLocation" x="-5202.3999999999996" y="-3537.481259370315"/>
         </scene>
         <!--Afururu English View Controller-->
         <scene sceneID="2HL-aq-v64">

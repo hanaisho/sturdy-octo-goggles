@@ -16,8 +16,9 @@ class yoshi_calenderViewController: UIViewController {
         }
     }
 
+    //button tap
     @IBAction func tapSampleButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "go_sample", sender: self)
+        performSegue(withIdentifier: "goCalendar", sender: self)
     }
 
     override func viewDidLoad() {

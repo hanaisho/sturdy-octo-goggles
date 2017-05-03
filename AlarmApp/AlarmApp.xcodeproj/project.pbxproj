@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		6DAEFDBD1EA7ABE900183513 /* yoshi_calenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAEFDBB1EA7ABE900183513 /* yoshi_calenderViewController.swift */; };
 		6DAEFDBE1EA7ABE900183513 /* yoshi_calenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DAEFDBC1EA7ABE900183513 /* yoshi_calenderViewController.xib */; };
-		6DAEFDC21EA7AFDE00183513 /* yoshi_sampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAEFDC01EA7AFDE00183513 /* yoshi_sampleViewController.swift */; };
-		6DAEFDC31EA7AFDE00183513 /* yoshi_sampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DAEFDC11EA7AFDE00183513 /* yoshi_sampleViewController.xib */; };
+		6DD1EF371EB97F1A0028E587 /* Yoshi_memo in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1EF361EB97F1A0028E587 /* Yoshi_memo */; };
 		CA1BE6D91EA65DF300C2CA31 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1BE6D81EA65DF300C2CA31 /* MainViewController.xib */; };
 		CA39D72B1E9666B400841291 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA39D72A1E9666B400841291 /* AppDelegate.swift */; };
 		CA39D7301E9666B400841291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA39D72E1E9666B400841291 /* Main.storyboard */; };
@@ -53,8 +52,7 @@
 /* Begin PBXFileReference section */
 		6DAEFDBB1EA7ABE900183513 /* yoshi_calenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yoshi_calenderViewController.swift; sourceTree = "<group>"; };
 		6DAEFDBC1EA7ABE900183513 /* yoshi_calenderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = yoshi_calenderViewController.xib; sourceTree = "<group>"; };
-		6DAEFDC01EA7AFDE00183513 /* yoshi_sampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = yoshi_sampleViewController.swift; sourceTree = "<group>"; };
-		6DAEFDC11EA7AFDE00183513 /* yoshi_sampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = yoshi_sampleViewController.xib; sourceTree = "<group>"; };
+		6DD1EF361EB97F1A0028E587 /* Yoshi_memo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yoshi_memo; sourceTree = "<group>"; };
 		CA1BE6D81EA65DF300C2CA31 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		CA39D7271E9666B400841291 /* AlarmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA39D72A1E9666B400841291 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,15 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6DAEFDBF1EA7AFB400183513 /* sample */ = {
-			isa = PBXGroup;
-			children = (
-				6DAEFDC01EA7AFDE00183513 /* yoshi_sampleViewController.swift */,
-				6DAEFDC11EA7AFDE00183513 /* yoshi_sampleViewController.xib */,
-			);
-			name = sample;
-			sourceTree = "<group>";
-		};
 		CA39D71E1E9666B400841291 = {
 			isa = PBXGroup;
 			children = (
@@ -189,9 +178,9 @@
 		CA39D75A1E9E4A3400841291 /* yoshi */ = {
 			isa = PBXGroup;
 			children = (
-				6DAEFDBF1EA7AFB400183513 /* sample */,
 				6DAEFDBB1EA7ABE900183513 /* yoshi_calenderViewController.swift */,
 				6DAEFDBC1EA7ABE900183513 /* yoshi_calenderViewController.xib */,
+				6DD1EF361EB97F1A0028E587 /* Yoshi_memo */,
 			);
 			name = yoshi;
 			sourceTree = "<group>";
@@ -344,9 +333,9 @@
 				CAE897251EA6435A00F81FDB /* AfururuCalenderViewController.xib in Resources */,
 				CAE897291EA643AB00F81FDB /* AfururuEnglishViewController.xib in Resources */,
 				CA39D7321E9666B400841291 /* Assets.xcassets in Resources */,
-				6DAEFDC31EA7AFDE00183513 /* yoshi_sampleViewController.xib in Resources */,
 				CA1BE6D91EA65DF300C2CA31 /* MainViewController.xib in Resources */,
 				CAE8972D1EA643C100F81FDB /* AfururuMapViewController.xib in Resources */,
+				6DD1EF371EB97F1A0028E587 /* Yoshi_memo in Resources */,
 				CA39D7601E9E4A9B00841291 /* hanaMainViewController.xib in Resources */,
 				CA39D7301E9666B400841291 /* Main.storyboard in Resources */,
 			);
@@ -381,7 +370,6 @@
 				CA39D72B1E9666B400841291 /* AppDelegate.swift in Sources */,
 				CAE8972C1EA643C100F81FDB /* AfururuMapViewController.swift in Sources */,
 				6DAEFDBD1EA7ABE900183513 /* yoshi_calenderViewController.swift in Sources */,
-				6DAEFDC21EA7AFDE00183513 /* yoshi_sampleViewController.swift in Sources */,
 				CAF80CE51E9E69BE00D8BA6A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

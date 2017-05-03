@@ -1,0 +1,324 @@
+//
+//  PercentViewController.swift
+//  MtCalc
+//
+//  Created by 岩崎吉伸 on 2017/05/01.
+//  Copyright © 2017年 岩崎吉伸. All rights reserved.
+//
+
+import UIKit
+
+class PercentViewController: UIViewController {
+
+//金額を受け取る変数
+var price: Int = 0
+
+@IBOutlet weak var priceFd: UILabel!
+@IBOutlet weak var percent: UITextField!
+@IBOutlet weak var result: UITextField!
+
+override func viewDidLoad() {
+super.viewDidLoad()
+priceFd.text = "入力された金額は、¥\(price)です。"
+// Do any additional setup after loading the view.
+}
+
+override func didReceiveMemoryWarning() {
+super.didReceiveMemoryWarning()
+// Dispose of any resources that can be recreated.
+}
+
+@IBAction func tap1(_ sender: Any) {
+//percentはoptional型なので!をつけてアンラップする
+let value = percent.text! + "1"
+if let price = Int(value){
+percent.text = "\(price)"
+}
+}
+
+@IBAction func tap2(_ sender: Any) {
+//percentはoptional型なので!をつけてアンラップする
+let value = percent.text! + "2"
+if let price = Int(value){
+percent.text = "\(price)"
+}
+}
+
+@IBAction func tap3(_ sender: Any) {
+//percentはoptional型なので!をつけてアンラップする
+let value = percent.text! + "3"
+if let price = Int(value){
+percent.text = "\(price)"
+}
+}
+
+@IBAction func tap4(_ sender: Any) {
+//percentはoptional型なので!をつけてアンラップする
+let value = percent.text! + "4"
+if let price = Int(value){
+percent.text = "\(price)"
+}
+}
+
+@IBAction func tap5(_ sender: Any) {
+//percentはoptional型なので!をつけてアンラップする
+let value = percent.text! + "5"
+if let price = Int(value){
+percent.text = "\(price)"
+}
+}
+
+@IBAction func tap6(_ sender: Any) {
+//percentはoptional型なので!をつけてアンラップする
+let value = percent.text! + "6"
+if let price = Int(value){
+percent.text = "\(price)"
+}
+}
+
+@IBAction func tap7(_ sender: Any) {
+//percentはoptional型なので!をつけてアンラップする
+let value = percent.text! + "7"
+if let price = Int(value){
+percent.text = "\(price)"
+}
+}
+
+@IBAction func tap8(_ sender: Any) {
+//percentはoptional型なので!をつけてアンラップする
+let value = percent.text! + "8"
+if let price = Int(value){
+percent.text = "\(price)"
+}
+}
+
+@IBAction func tap9(_ sender: Any) {
+//percentはoptional型なので!をつけてアンラップする
+let value = percent.text! + "9"
+if let price = Int(value){
+percent.text = "\(price)"
+}
+}
+
+@IBAction func tap0(_ sender: Any) {
+//percentはoptional型なので!をつけてアンラップする
+let value = percent.text! + "0"
+if let price = Int(value){
+percent.text = "\(price)"
+}
+}
+
+@IBAction func tapC(_ sender: Any) {
+percent.text = "0"
+}
+
+//    計算
+@IBAction func math(_ sender: Any) {
+//percentはoptional型なので!をつけてアンラップする
+let value = percent.text!
+if let a = Int(value){  //アンラップ処理
+if a != 0 && price != 0{
+//割引率を算出
+let b = Float(a) / 100
+//割引額を算出
+let c = Float(price) * b
+//割引後の価格を算出
+let d = price - Int(c)
+//結果表示
+result.text = "¥\(price)を\(a)%割引と¥\(d)"
+}else{
+result.text = "0は計算できないわ。。"
+}
+}
+}
+
+
+
+}
+
+
+
+***************************
+
+//
+//  ViewController.swift
+//  MtCalc
+//
+//  Created by 岩崎吉伸 on 2017/04/30.
+//  Copyright © 2017年 岩崎吉伸. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+/*    @IBOutletとは、Stpryboard上で配置した部品のプロパティで、ソースコードから扱えるようになっているプロパティに付与される。
+「＠」はプログラム中の特別な予約後であることを示す。続く「IB」は「インターフェースビルダー」の略。これはStoryboardが登場する以前に
+使用されていた画面レイアウトのためのツール。*/
+/*    「weak」のほかに「storong」「unowned」がある
+weak:プロパティを参照する際にオーナーシップを持たない場合の修飾子。メモリ解放時にはプロパティにnilが設定される。
+storong:プロパティを参照する際にオーナーシップを持つ修飾子。デフォルト修飾子
+unowned:オーナーシップを持たない、かつ、そのインスタンスが存在する場合に参照する際の修飾子。循環参照対策に使用。*/
+//    iOSのメモリ管理の仕組みに「Automatic Reference Counting」(ARC)がある。詳しくは→p166
+@IBOutlet weak var priceField: UITextField!
+
+
+//    viewDidLoadの簡単な説明
+//    ビューコントローラで制御するビューの準備が整ったあとに呼び出されるメソッド
+//    ビューの定義などは基本的にStoryboard上で行うのですが、プログラムで追加の設定が必要な場合に、このメソッド内に追加の処理を記述する。
+override func viewDidLoad() {
+super.viewDidLoad()
+// Do any additional setup after loading the view, typically from a nib.
+}
+
+//    didReceiveMemoryWarningの簡単な説明
+//    iOSの本体のメモリ容量が圧迫した際になった時呼び出されるメソッド。iOSはシステム全体の安定化のために
+//    メモリを使いすぎているアプリに対して強制終了の指示を出すことがあります。アプリ開発者はこのメソッドにアプリ内での
+//    利用していない情報を破棄する処理を記述しておく。
+override func didReceiveMemoryWarning() {
+super.didReceiveMemoryWarning()
+// Dispose of any resources that can be recreated.
+}
+
+
+//    １を押した時の処理
+@IBAction func tap1Button(_ sender: Any) {
+//priceFieldはoptional型なので!をつけてアンラップする
+let value = priceField.text! + "1"
+if let price = Int(value){
+priceField.text = "\(price)"
+}
+}
+
+@IBAction func tap2Button(_ sender: Any) {
+//priceFieldはoptional型なので!をつけてアンラップする
+let value = priceField.text! + "2"
+if let price = Int(value){
+priceField.text = "\(price)"
+}
+
+}
+
+@IBAction func tap3Button(_ sender: Any) {
+//priceFieldはoptional型なので!をつけてアンラップする
+let value = priceField.text! + "3"
+if let price = Int(value){
+priceField.text = "\(price)"
+}
+
+}
+
+@IBAction func tap4Button(_ sender: Any) {
+//priceFieldはoptional型なので!をつけてアンラップする
+let value = priceField.text! + "4"
+if let price = Int(value){
+priceField.text = "\(price)"
+}
+
+}
+
+@IBAction func tap5Button(_ sender: Any) {
+//priceFieldはoptional型なので!をつけてアンラップする
+let value = priceField.text! + "5"
+if let price = Int(value){
+priceField.text = "\(price)"
+}
+
+}
+
+@IBAction func tap6Button(_ sender: Any) {
+//priceFieldはoptional型なので!をつけてアンラップする
+let value = priceField.text! + "6"
+if let price = Int(value){
+priceField.text = "\(price)"
+}
+
+}
+
+@IBAction func tap7Button(_ sender: Any) {
+//priceFieldはoptional型なので!をつけてアンラップする
+let value = priceField.text! + "7"
+if let price = Int(value){
+priceField.text = "\(price)"
+}
+
+}
+
+@IBAction func tap8Button(_ sender: Any) {
+//priceFieldはoptional型なので!をつけてアンラップする
+let value = priceField.text! + "8"
+if let price = Int(value){
+priceField.text = "\(price)"
+}
+
+}
+
+@IBAction func tap9Button(_ sender: Any) {
+//priceFieldはoptional型なので!をつけてアンラップする
+let value = priceField.text! + "9"
+if let price = Int(value){
+priceField.text = "\(price)"
+}
+
+}
+
+@IBAction func tap0Button(_ sender: Any) {
+if priceField.text != "0"{
+let value = priceField.text! + "0"
+if let price = Int(value){
+priceField.text = "\(price)"
+}
+}
+}
+
+@IBAction func tap00Button(_ sender: Any) {
+if priceField.text != "0"{
+let value = priceField.text! + "00"
+if let price = Int(value){
+priceField.text = "\(price)"
+}
+}
+}
+
+@IBAction func tapCButton(_ sender: Any) {
+priceField.text = "0"
+}
+
+//    画面遷移時に呼び出されるメソッド
+//    要するに画面遷移時に値を渡したい場合に使用する。
+//    Storyboard上で画面と画面をつないだ時のSegue情報を持った変数。遷移先、遷移元情報など、画面遷移に関する
+//    情報を持っている。segue変数は別名としてforが設定されている。
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        destinationはviewcontrollerを持っている。それをPercentViewControllerにダウンキャストして遷移先の変数を
+//        利用できるようにする。
+let viewController = segue.destination as! PercentViewController
+
+//        金額フィールドの値を数値変換
+if let price = Int(priceField.text!){
+//                    次画面の変数に値設定
+viewController.price = price
+}
+
+}
+
+/*
+引数の省略 p60参照
+func 関数名（_ 引数名: 型） -> 戻り値の型{}
+このように定義するとこの関数を呼び出す際には
+関数名（引数名）で良い  test(score)
+
+省略しなかった場合の記述方法
+func 関数名（引数名: 型） -> 戻り値の型{}
+呼び出し時→　関数名（引数名: 型）　　test(score: Int)
+*/
+
+//    計算結果画面から、この画面に戻ってくる際に実行されるメソッド
+//    別画面のボタン押下時の処理だが、初めの画面（起動時）に戻る際に実行されるのでこのswiftコードに記載する。
+//    全て手打ちなので注意。
+@IBAction func restert(_ segue: UIStoryboardSegue){
+priceField.text = "0"
+}
+
+}
+
+
